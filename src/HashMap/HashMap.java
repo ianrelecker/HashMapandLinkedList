@@ -15,16 +15,16 @@ public class HashMap<KEYTYPE, DATATYPE> extends HMBase<KEYTYPE, DATATYPE> {
     @Override
     protected int hash(Object key) {
         //_+ first hash function
-        /**
+//        /**
         String s = key.toString();
         int sum=0;
         for (int i=0; i<s.length(); i++){
             sum += s.charAt(i);
          }
          return sum % N;
-         **/
+//         **/
         //_+ second hash function
-//        /**
+        /**
         String s = key.toString();
         int h = 0, high;
         for(int i= 0; i< s.length(); i++) {
@@ -37,7 +37,7 @@ public class HashMap<KEYTYPE, DATATYPE> extends HMBase<KEYTYPE, DATATYPE> {
 
 
         return h % N;
-//                **/
+                **/
     }
 
     @Override
