@@ -2,7 +2,7 @@ package DoubleLinkedList;
 
 public class DoubleLinkedList<T> extends LLBase<T> implements LLInterface<T> {
 
-    DoubleLinkedList() {
+    public DoubleLinkedList() {
         head = null;
         size = 0;
         tail = null;

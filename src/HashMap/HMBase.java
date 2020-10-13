@@ -13,13 +13,15 @@ public abstract class HMBase<KEYTYPE, DATATYPE> {
 	 * to store in the table, ideally 2 * number of values)
 	 * the default size of the hashmap array, below
 	 */
-	private int N = 257;
+	//_+maybe change this to protected from private
+	protected int N = 257;
 	
 	/**
 	 * a HashMap is an array of linked-lists of Node<KEYTYPE, DATATYPE>
 	 * accessed through and index provided by a hash function
 	 */
-	DoubleLinkedList<Node<KEYTYPE, DATATYPE>> hashmap[];
+	//_+ changed to protected
+	protected DoubleLinkedList<Node<KEYTYPE, DATATYPE>> hashmap[];
 	
 	// -- while it cannot be specifed here (because abstract classes
 	//    cannot contain an constructor, your extending class should
