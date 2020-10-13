@@ -35,8 +35,9 @@ public class HashMap<KEYTYPE, DATATYPE> extends HMBase<KEYTYPE, DATATYPE> {
             h&= ~high;
         }
 
-//        **/
+
         return h % N;
+//                **/
     }
 
     @Override
